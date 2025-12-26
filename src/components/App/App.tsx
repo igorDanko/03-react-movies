@@ -47,7 +47,7 @@ export default function App() {
   return (
     <div className={css.app}>
       <SearchBar onSubmit={handleSearch} />
-      <main className={css.main}>
+      <main>
         {isLoading && <Loader />}
         {isError && <ErrorMessage />}
         {!isLoading && !isError && movies.length > 0 && (
